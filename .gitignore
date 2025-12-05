@@ -1,0 +1,23 @@
+# --- Images you don't want to track ---
+*.jpg
+*.jpeg
+*.png
+# *.webp
+
+# --- VS Code settings ---
+.vscode/
+
+# --- OS generated files (Windows/Mac) ---
+Thumbs.db
+.DS_Store
+
+# --- Logs ---
+*.log
+
+# --- Node / build folders (if you ever use JS frameworks later) ---
+node_modules/
+dist/
+build/
+
+# --- Environment files ---
+.env

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aditya — Portfolio (Purple Galaxy)</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- LOADER -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="spinner"></div>
+      <div class="loader-text">Booting the Nebula... 🫰</div>
+    </div>
+  </div>
+
+  <!-- CANVAS PARTICLES -->
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- CUSTOM CURSOR TRAIL -->
+  <div id="cursor-trail" class="cursor-trail" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand-img" href="#hero">
+        <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" class="sun-logo" alt="Sun Logo">
+      </a>
+      <ul class="nav-links" role="menu">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#photos">Clicks</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="hero" class="hero section">
+      <div class="hero-inner container">
+        <h1 class="hero-title">Hey - I'm <span class="accent">Aditya</span></h1>
+        <p class="hero-subtitle" id="typing"></p>
+        <div class="hero-cta">
+          <button class="btn primary" data-scroll="projects">View Projects</button>
+          <a class="btn ghost" href="#contact">Hire Me</a>
+        </div>
+        <div class="hero-floating" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <div class="container">
+        <!-- ⭐ Skills Header (THIS WAS MISSING) -->
+        <h2 class="section-title">⚡ Skills</h2>
+        <div class="grid-3">
+          <div class="card tilt" data-tilt>
+            <h3>Frontend</h3>
+            <p>HTML • CSS • JavaScript</p>
+          </div>
+          <div class="card tilt" data-tilt>
+            <h3>Languages</h3>
+            <p>JAVA • Python • SQL</p>
+          </div>
+          <div class="card tilt" data-tilt>
+            <h3>Tools</h3>
+            <p>Docker • Git • AWS • Terraform</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <!-- Buttons will redirect to GitHub using data-repo -->
+          <article class="project-card tilt" data-tilt data-repo="https://github.com/PopGuyy/Weather_Reports">
+            <img src="weather-pic.webp" alt="Weather Fetching App preview">
+            <div class="project-body">
+              <h3>Weather Fetching App</h3>
+              <p>Lightweight JAVA + JavaFX with OpenWeather API & input system.</p>
+              <div class="project-actions">
+                <button class="btn primary project-link">View on GitHub</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card tilt" data-tilt data-repo="https://github.com/PopGuyy/Devops">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=60"
+              alt="DevOps preview">
+            <div class="project-body">
+              <h3>CI/CD with Terraform</h3>
+              <p>AWS infra + Terraform + Jenkins pipeline for automated deployment.</p>
+              <div class="project-actions">
+                <button class="btn primary project-link">View on GitHub</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- <article class="project-card tilt" data-tilt data-repo="ml-playground">
+            <img src="https://images.unsplash.com/photo-1496317899792-9d7dbcd928a1?auto=format&fit=crop&w=1200&q=60" alt="ML preview">
+            <div class="project-body">
+              <h3>ML Experiments</h3>
+              <p>KNN, SVM, t-SNE visualizations and evaluation notebooks.</p>
+              <div class="project-actions">
+                <button class="btn primary project-link">View on GitHub</button>
+              </div>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOGRAPHY -->
+    <section id="photos" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Photography</h2>
+        <div class="photo-grid">
+          <figure class="photo-card tilt" data-tilt>
+            <div class="full-image-container">
+              <img src="WhatsApp Image 2025-11-26 at 23.58.48_4415a8e5.jpg" alt="photo 1">
+            </div>
+
+          </figure>
+          <figure class="photo-card tilt" data-tilt>
+            <div class="full-image-container">
+              <img src="WhatsApp Image 2025-11-26 at 23.58.48_e78abce1.jpg" alt="photo 2">
+            </div>
+
+          </figure>
+          <figure class="photo-card tilt" data-tilt>
+            <div class="full-image-container">
+              <img src="WhatsApp Image 2025-11-26 at 23.59.32_b13e919c.jpg" alt="photo 3">
+            </div>
+
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="container contact-grid">
+        <div class="contact-info tilt" data-tilt>
+          <h2>Let's build something</h2>
+          <p>Email: <a href="mailto:acharyaaditya@gmail.com">acharyaaditya@gmail.com</a></p>
+          <p>Location: Cuttack, Odisha, India</p>
+          <div class="socials">
+            <a href="https://github.com/PopGuyy" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/aditya-prakash-acharya-81750325a" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" aria-label="Contact form">
+          <input name="name" placeholder="Your name" required />
+          <input name="email" placeholder="Your email" type="email" required />
+          <textarea name="message" placeholder="Message" rows="6" required></textarea>
+          <div class="form-actions">
+            <button id="download-resume" class="btn primary resume-btn glow-btn">
+              <span class="btn-text">Download Resume</span>
+              <span class="pulse-ring"></span>
+            </button>
+            <button type="submit" class="btn primary">Send Message</button>
+            <button type="reset" class="btn ghost">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aditya — Purple Galaxy Nebula</p>
+    </div>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
