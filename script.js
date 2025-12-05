@@ -1,8 +1,5 @@
-/* script.js — intermediate level modular code
-   - Replace GITHUB_PROFILE_URL with your GitHub profile
-*/
 
-const GITHUB_PROFILE_URL = "https://github.com/your-username"; // <-- change this
+const GITHUB_PROFILE_URL = "https://github.com/Popguyy"; // <-- change this
 
 /* ---------------------------
    Utility helpers
